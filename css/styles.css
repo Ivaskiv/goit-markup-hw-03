@@ -1,0 +1,181 @@
+:root {
+    --color-iris: #4d5ae5;
+    --color-cloud: #F4F4FD;
+    --color-slate: #434455;
+    --color-ocean: #404BBF;
+    --color-blue: #2E2F42;
+    --color-green: #31D0AA;
+    --color-white: #FFFFFF;
+    --color-modal: #FCFCFC;
+    --color-cornflower: #E7E9FC;
+}
+/*body*/
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: var(--color-slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: var(--color-white);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.contact-links, 
+.head-nav__list a{
+    color: var(--color-blue);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/*logo*/
+.logo {
+    color: var(--color-iris);
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+}
+.logo-header-blue {
+    color: var(--color-blue);
+}
+.logo-header-white {
+    color: var(--color-cloud);
+}
+/*address*/
+address {
+    font-style: normal;
+}
+.h-address__list a{
+    color: var(--color-slate);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    list-style: none;
+    text-decoration: none;
+}
+/*banner*/
+.hero {
+    background-color: var(--color-blue);
+}
+.banner {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+.banner__btn{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-iris);
+    cursor: pointer;
+    color: var(--color-white);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.banner__btn:active,
+.banner__btn:hover,
+.banner__btn:focus{
+    background-color: var(--color-ocean);
+    color: var(--color-white);
+}
+/*section*/
+.section__title {
+    color: var(--color-blue);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.section__card-title,
+.gallery__card-title {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.section__team-text,
+.gallery__team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--color-slate);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.s-our-team, .section-gallery {
+    background: var(--color-white);
+}
+.section-our-time, .section-team {
+    background-color: var(--color-cloud);
+}
+/*gallery*/
+.gallery {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-blue);  
+}
+.gallery__card-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    letter-spacing: 0.02em; 
+}
+.h-address__list .contact-links:active,
+.h-address__list .contact-links:hover,
+.h-address__list .contact-links:focus,
+.head-nav__list .link:active,
+.head-nav__list .link:hover,
+.head-nav__list .link:focus {
+    color: var(--color-ocean);
+}
+/*footer*/
+.footer{
+    background-color: var(--color-blue);
+    color: var(--color-cloud);
+}
+.footer-p{
+    letter-spacing: 0.02em;
+}
+.filters {
+    list-style: none;
+}
+.f-btn-list__li {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-iris);
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--color-cloud);
+}
+.f-btn-list__li:active,
+.f-btn-list__li:hover,
+.f-btn-list__li:focus {
+    background-color: var(--color-ocean);
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
