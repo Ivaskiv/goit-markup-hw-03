@@ -308,6 +308,7 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 
 .f-btn-list__button:active,
@@ -362,14 +363,10 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-self: flex-start;
     column-gap: 24px;
     margin-top: 96px;
     margin-bottom: 72px;
-}
-
-.f-btn-list__li {
-    align-items: flex-start;
-    width: calc((100% - 24px * 4) / 5);
 }
 
 .f-btn-list__button {
@@ -394,7 +391,8 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .gallery__card {
