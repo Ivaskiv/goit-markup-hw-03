@@ -283,7 +283,7 @@ address {
 .our-team__card {
     background: var(--color-white);
     width: calc((100% - 24px * 3) / 4);
-    margin-bottom: 32px;
+    margin-bottom: 120px;
     text-align: center;
 }
 
@@ -309,6 +309,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+    
 }
 
 .f-btn-list__button:active,
