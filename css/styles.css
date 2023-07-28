@@ -136,8 +136,12 @@ body {
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.54px;
-    display: block;
+    display: inline-block;
     margin-right: 76px;
+}
+
+.site-header {
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .logo-header-blue {
@@ -280,8 +284,10 @@ address {
 
 /*our-team*/
 .section__our-team {
+    max-width: 100%;
+    align-items: center;
     background-color: var(--color-cloud);
-    padding-bottom: 120px 0;
+    padding-bottom: 120px;
 }
 
 .our-team__title {
@@ -293,7 +299,6 @@ address {
     text-transform: capitalize;
     text-align: center;
     padding-top: 120px;
-
 }
 
 .our-team__list {
@@ -392,6 +397,7 @@ address {
     color: var(--color-cloud);
     width: 100%;
     padding: 100px 0;
+    margin-bottom: 16px;
 }
 
 .footer__description {
@@ -404,7 +410,6 @@ address {
 
 .footer__wrapper {
     display: inline-block;
-    margin-bottom: 16px;
 }
 /*portfolio*/
 .filters {
