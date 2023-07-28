@@ -410,20 +410,19 @@ address {
     column-gap: 24px; 
     row-gap: 48px;
 }
-.gallery__card {
-    flex: none;
-}
+
 .gallery__card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
     padding: 32px 16px;
-    border: 1px solid var(--color-cornflower);
+    
     background: var(--color-white);
 }
 .gallery__li {
     flex: none;
+    border: 1px solid var(--color-cornflower);
 }
 
 .gallery__li > img {
