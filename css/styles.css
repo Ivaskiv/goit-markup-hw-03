@@ -55,8 +55,6 @@ body {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .visually-hidden {
@@ -80,19 +78,6 @@ body {
     list-style: none;
 }
 /* header */
-.header {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 72px;
-    border-bottom: 1px solid var(--color-cornflower);
-}
-.container.header__wrapper {
-    display: flex;
-    align-content: center;
-    padding: 0 15px;
-    background: var(--color-white);
-    border-bottom: 1px solid var(--color-cornflower);
-}
 .logo {
     color: var(--color-iris);
     font-family: "Raleway", sans-serif;
@@ -109,19 +94,33 @@ body {
 .logo-dark {
     color: var(--color-blue);
 }
+.header {
+    max-width: 1158px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 72px;
+    border-bottom: 1px solid var(--color-cornflower);
+}
+.container.header__wrapper {
+    background: var(--color-white);
+}
 
 .h-nav {
-    display: flex;
-    max-width: 100%;
-    align-items: center;
-    gap: 40px;
+    align-self: center;
+    margin-left: 76px;
+    
 }
 .h-nav__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-left: 76px;
     gap: 40px;
+}
+.contact-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 .contact-links, 
 .h-nav__list a {
@@ -131,9 +130,13 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
     padding: 24px 0;
-    justify-content: space-between;
+    
+
+}
+.header-address {
+    display: flex;
+    justify-content: flex-end;
 }
 .h-address__list .contact-links:active,
 .h-address__list .contact-links:hover,
@@ -144,15 +147,6 @@ body {
     color: var(--color-ocean);
 }
 
-.h-address__list {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 40px;
-}
-.h-address__list-li {
-    justify-content: flex-end;
-}
 .h-address__list-li a {
     color: var(--color-slate);
     font-size: 16px;
@@ -160,6 +154,8 @@ body {
     letter-spacing: 0.32px;
     list-style: none;
     text-decoration: none;
+    align-self: center;
+    
 }
 
 
