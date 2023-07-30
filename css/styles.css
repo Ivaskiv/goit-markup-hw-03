@@ -33,8 +33,9 @@ a {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
 address {
     font-style: normal;
@@ -54,10 +55,9 @@ body {
 
 .container { 
     display: block;
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 156px;
+
 }
 
 .visually-hidden {
@@ -72,26 +72,24 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .link {
     text-decoration: none;
 }
-
 .list {
     list-style: none;
 }
 /* header */
 .header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    border-bottom: 1px solid var(--color-cornflower);
 }
 .h-nav {
+    
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 0 156px;
     height: 72px;
-    border-bottom: 1px solid var(--color-cornflower);
 }
 .logo {
     color: var(--color-iris);
@@ -101,6 +99,7 @@ body {
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-left: 156px;
     margin-right: 76px;
     align-self: center;
 }
@@ -125,10 +124,16 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    
 }
 .h-address__list {
     display: flex;
+    flex-shrink: 0;
+    align-items: center;
     gap: 40px;
+    margin-right: 156px;
+    padding: 0;
 }
 .h-address__list .contact-links:active,
 .h-address__list .contact-links:hover,
@@ -137,10 +142,6 @@ body {
 .h-nav__list .link:hover,
 .h-nav__list .link:focus {
     color: var(--color-ocean);
-}
-.h-address__list-li{
-    display: flex;
-    align-self: center;
 }
 .h-address__list-li a {
     color: var(--color-slate);
@@ -211,6 +212,7 @@ body {
 /*features*/
 .features {
     padding: 120px 0;
+    margin: 0 156px;
 }
 .features__list {
     display: flex;
@@ -252,11 +254,7 @@ body {
 }
 
 /*our-team*/
-.our-team {
-    
-}
 .section__our-team {
-    max-width: 100%;
     align-items: center;
     background-color: var(--color-cloud);
     padding: 120px 0;
@@ -264,7 +262,7 @@ body {
 .our-team__list {
     display: flex;
     gap: 24px;
-    
+    margin: 0 156px;
 }
 .our-team__card {
     display: flex;
@@ -349,6 +347,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin: 0 156px;
 }
 
 .examples__li {
@@ -361,7 +360,7 @@ body {
 .examples__li > img {
     width: 360px;
     height: 300px;
-    object-fit: cover;
+    box-sizing: border-box;
 }
 /* footer */
 .footer {
@@ -388,20 +387,27 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
+    margin-left: 156px;
 }
 
 /*portfolio*/
+.container_filters {
+    display: flex;
+    flex-wrap: wrap;
+    width: ;
+
+}
 .filters {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    padding-bottom: 120px;
-    padding-top: 96px;
+    margin: 96px 156px 120px;
 }
 
 .f-btn-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-self: flex-start;
     gap: 24px;
     margin-bottom: 72px;
 }
@@ -428,22 +434,23 @@ body {
     background: var(--color-white);
     color: var(--color-blue);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;   
+    flex-wrap: wrap; 
     column-gap: 24px; 
-    row-gap: 48px;
+    row-gap: 48px; 
+    object-fit: cover;
+    background-size: cover;align-content: space-between;
 }
-
+.gallery__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 2 * 24) / 3);
+    
+} 
 .gallery__li {
     flex: none;
-    width: calc((100% - 2 * 24px) / 3);
     border: 1px solid var(--color-cornflower);
 }
-
-.gallery__li > img {
-    width: 360px;
-    height: 300px;
-    object-fit: cover;
+.gallery__card-img {
 }
 
 .gallery__card-content {
@@ -454,16 +461,16 @@ body {
     background: var(--color-white);
     row-gap: 8px;
     border: 1px solid var(--color-cornflower); 
-    border-top: none;
+    border-top: none;flex-wrap: nowrap;
 }
 
 .gallery__card-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
     text-transform: capitalize;
     letter-spacing: 0.02em;
+    
 }
 
 .gallery__team-text {
