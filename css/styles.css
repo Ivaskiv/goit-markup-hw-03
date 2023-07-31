@@ -123,9 +123,9 @@ body {
 }
 .h-nav__list-li {
     display: flex;
-    padding: 24px 0;
 }
-.h-nav__link {
+.h-nav__link {    
+    padding: 24px 0;
 }
 .header__address {
 }
